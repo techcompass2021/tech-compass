@@ -9,9 +9,9 @@
 <body>
 
     <!-- 課題1 -->
-    <?php echo 'str1は、'.$_GET['str1'].'です。'; ?><br />
-    <?php echo 'str2は、'.$_GET['str2'].'です。'; ?><br />
-    <?php echo 'str3は、'.$_GET['str3'].'です。'; ?>
+    str1は、<?php echo $_GET['str1']; ?>です。<br />
+    str2は、<?php echo $_GET['str2']; ?>です。<br />
+    str3は、<?php echo $_GET['str3']; ?>です。<br />
 
 
 </body>
