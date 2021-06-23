@@ -12,7 +12,7 @@
 
     <!-- 課題1-1 -->
     <?php 
-        $aveSalaryArray = [
+        $averageSalaryArray = [
             2018 => 4410000,
             2017 => 4320000,
             2016 => 4220000,
@@ -23,20 +23,14 @@
 
     <p><?php 
         echo("<pre>");
-        var_dump($aveSalaryArray);
+        var_dump($averageSalaryArray);
         echo("</pre>");
     ?></p>
 
     <!-- 課題1-2 -->
-    <?php 
-        $ave = ($aveSalaryArray[2018] + 
-                $aveSalaryArray[2017] +
-                $aveSalaryArray[2016] +
-                $aveSalaryArray[2015] +
-                $aveSalaryArray[2014] ) / 5;
-    ?>
+    <?php $averageSalary5Y = round(array_sum($averageSalaryArray) / count($averageSalaryArray)); ?>
 
-    <p>過去5年間の平均年収:<?php echo("$ave"); ?>円</p>
+    <p>過去5年間の平均年収: <?php echo($averageSalary5Y); ?>円</p>
 
 
     <h1>課題2</h1>
@@ -59,15 +53,10 @@
 
     <!-- 課題2-2 -->
     <?php  
-        $aveScore = ($scoreArray['A'] +
-                     $scoreArray['B'] +
-                     $scoreArray['C'] +
-                     $scoreArray['D'] +
-                     $scoreArray['E'] +
-                     $scoreArray['F'] ) / 6;
+        $averageScore = round(array_sum($scoreArray) / count($scoreArray));
     ?>
 
-    <p>平均点: <?php echo("$aveScore"); ?>点</p>
+    <p>平均点: <?php echo($averageScore); ?>点</p>
 
 
 
