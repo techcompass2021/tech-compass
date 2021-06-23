@@ -55,7 +55,7 @@
     <h1>課題2</h1>
 
     <!-- 課題2-1 -->
-    <p><?php 
+    <?php 
         $jap = rand(1,100);
         $mat = rand(1,100);
         $sci = rand(1,100);
@@ -63,9 +63,9 @@
         $eng = rand(1,100);
 
         $aveA = ($jap + $mat + $sci + $soc + $eng) / 5;
+    ?>
 
-        echo("Aくんの平均点は{$aveA}点です。");
-    ?></p>
+    <p>Aくんの平均点は<?php echo("$aveA"); ?>点です。</p>
         
     <!-- 課題2-2 -->
     <p><?php 
