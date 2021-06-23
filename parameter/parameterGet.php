@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -10,8 +7,6 @@
     <title>taskParameter</title>
 </head>
 <body>
-    <p><?php echo('回答を<p>タグで囲み、回答を出力してください。'); ?></p>
-    <p><?php echo('回答例: 1 + 1 = ' . (1 + 1) . 'です。'); ?></p>
 
     <!-- 課題1 -->
     <?php echo 'str1は、'.$_GET['str1'].'です。'; ?><br />
