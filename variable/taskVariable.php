@@ -1,3 +1,24 @@
+<?php 
+    const TAX = 0.1;
+    $applePrice = 110;
+    $appleQuantity = 15;
+    $orangePrice = 80;
+    $orangeQuantity = 12;
+    $totalQuantity = $appleQuantity + $orangeQuantity;
+
+    //りんご総額
+    $appleTotal = $applePrice * $appleQuantity;
+    //オレンジ総額
+    $orangeTotal = $orangePrice * $orangeQuantity;
+    //総額（税抜）
+    $total = $appleTotal + $orangeTotal;
+    //総額（税込）
+    $totalTax = $total * TAX;
+    $totalIncludeTax = $total + $totalTax;
+    //フルーツ1個あたりの金額（税抜）
+    $eachPrice = round($total / $totalQuantity);
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -7,35 +28,23 @@
     <title>taskVariable</title>
 </head>
 <body>
+
     <!-- 1個110円の林檎を15個、1個80円のオレンジを12個 消費税率は定数として10％-->
-    <?php
-        const TAX = 0.1;
-        $apple = 110;
-        $orenge = 80;
-    ?>
-    
+
     <!-- 1,林檎の総額（税抜）--> 
-    <?php $applePrice = $apple * 15; ?>
-    <p>りんごの総額(税抜): <?php echo ("$applePrice"); ?>円</p>
+    <p>りんごの総額(税抜): <?php echo ($appleTotal); ?>円</p>
 
     <!-- 2,オレンジの総額（税抜）-->
-    <?php $orengePrice = $orenge * 12; ?>
-    <p>オレンジの総額(税抜): <?php echo ("$orengePrice"); ?>円</p>
+    <p>オレンジの総額(税抜): <?php echo ($orangeTotal); ?>円</p>
 
     <!-- 3,総額（税抜）-->
-    <?php $total = $applePrice + $orengePrice; ?>
-    <p>総額(税抜): <?php echo ("$total"); ?>円</p>
+    <p>総額(税抜): <?php echo ($total); ?>円</p>
 
     <!-- 4,総額（税込）-->
-    <?php 
-        $totalTax = $total * TAX;
-        $total2 = $total + $totalTax;
-    ?>
-    <p>総額(税込): <?php echo ("$total2"); ?>円</p>
+    <p>総額(税込): <?php echo ($totalIncludeTax); ?>円</p>
 
     <!-- 5,フルーツ一個あたりの金額（税抜）小数点以下は四捨五入-->
-    <?php $fruits = round($total / 27); ?>
-    <p>フルーツ一個あたりの金額(税抜): <?php echo ("$fruits"); ?>円</p>
+    <p>フルーツ一個あたりの金額(税抜): <?php echo ($eachPrice); ?>円</p>
 
 <body>
 </body>
