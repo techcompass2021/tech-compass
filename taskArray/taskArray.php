@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -39,7 +36,7 @@
                 $aveSalaryArray[2014] ) / 5;
     ?>
 
-    <p><?php echo("過去5年間の平均年収:{$ave}円"); ?></p>
+    <p>過去5年間の平均年収:<?php echo("$ave"); ?>円</p>
 
 
     <h1>課題2</h1>
@@ -70,7 +67,7 @@
                      $scoreArray['F'] ) / 6;
     ?>
 
-    <p><?php echo("平均点:{$aveScore}点"); ?>
+    <p>平均点: <?php echo("$aveScore"); ?>点</p>
 
 
 
