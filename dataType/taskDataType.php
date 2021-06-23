@@ -9,16 +9,18 @@
 <body>
 
     <!-- 課題1　-->
-    <?php $task1 = 5; ?>
-    <p>りんごが<?php echo("$task1"); ?>個あります。</p>
+    <?php $appleQuantity = 5; ?>
+    <p>りんごが<?php echo($appleQuantity); ?>個あります。</p>
    
     <!-- 課題2　-->
-    <p><?php echo("string型を使用するときに、ダブルクオート(\")を表示する場合は、バックスラッシュ(\)が必要です。"); ?></p>
+    <?php $str = "string型を使用するときに、ダブルクオート(\")を表示する場合は、バックスラッシュ(\)が必要です。"; ?>
+    <p><?php echo( $str ); ?></p>
 
     <!-- 課題3　-->
-    <p><?php echo('I\'m Security Engineer'); ?></p>
+    <?php $str2 = 'I\'m Security Engineer'; ?>
+    <p><?php echo( $str2 ); ?></p>
 
-    <!-- 課題3　-->
+    <!-- 課題4　-->
     <p><?php
         const GOOD_EVENING = "こんばんは";
         $name = "太郎くん";
