@@ -9,7 +9,6 @@
     $soc = rand(1,100);
     $eng = rand(1,100);
     $aveScore = ($jap + $mat + $sci + $soc + $eng) / 5;
-
 ?>
 <!DOCTYPE html>
 <html lang="ja">
