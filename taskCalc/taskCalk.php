@@ -12,17 +12,16 @@
 
     <p><?php echo(round(22 / 3, 2));?></p>
 
+    <p><?php echo(round(22 / 3, 3));?></p>
+
     <p><?php echo(ceil(22 / 3)); ?></p>
 
     <p><?php echo(floor(22 / 3)); ?></p>
 
-    <p>
-        <?php 
-            $number = round(5 / (6 * 6), 1) * 10;
-
-            echo( $number . "%" );
-        ?>
-    </p>
+    <p><?php 
+        $number = round(5 / (6 * 6), 1) * 10;
+        echo( $number . "%" );
+    ?></p>
 
 </body>
 <body>
