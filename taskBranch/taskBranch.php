@@ -1,4 +1,14 @@
 <?php
+    //課題1
+    $string = "100";
+
+    //課題2
+    $jap = rand(1,100);
+    $mat = rand(1,100);
+    $sci = rand(1,100);
+    $soc = rand(1,100);
+    $eng = rand(1,100);
+    $aveScore = ($jap + $mat + $sci + $soc + $eng) / 5;
 
 ?>
 <!DOCTYPE html>
@@ -10,8 +20,6 @@
     <title>taskBranch</title>
 </head>
 <body>
-
-    <?php $string = "100"; ?>
 
     <h1>課題1</h1>
 
@@ -55,21 +63,11 @@
     <h1>課題2</h1>
 
     <!-- 課題2-1 -->
-    <?php 
-        $jap = rand(1,100);
-        $mat = rand(1,100);
-        $sci = rand(1,100);
-        $soc = rand(1,100);
-        $eng = rand(1,100);
-
-        $aveA = ($jap + $mat + $sci + $soc + $eng) / 5;
-    ?>
-
-    <p>Aくんの平均点は<?php echo("$aveA"); ?>点です。</p>
+    <p>Aくんの平均点は<?php echo($aveScore); ?>点です。</p>
         
     <!-- 課題2-2 -->
     <p><?php 
-        if($aveA >= 63.7) {
+        if($aveScore >= 63.7) {
             echo("Aくんの平均点は67.3以上です。");
         } else {
             echo("Aくんの平均点は67.3未満です。");
