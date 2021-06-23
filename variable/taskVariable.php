@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -16,28 +13,29 @@
         $apple = 110;
         $orenge = 80;
     ?>
+    
     <!-- 1,林檎の総額（税抜）--> 
     <?php $applePrice = $apple * 15; ?>
-    <p><?php echo ( "りんごの総額(税抜): " . $applePrice . "円"); ?></p>
+    <p>りんごの総額(税抜): <?php echo ("$applePrice"); ?>円</p>
 
     <!-- 2,オレンジの総額（税抜）-->
     <?php $orengePrice = $orenge * 12; ?>
-    <p><?php echo ( "オレンジの総額(税抜): " . $orengePrice . "円"); ?></p>
+    <p>オレンジの総額(税抜): <?php echo ("$orengePrice"); ?>円</p>
 
     <!-- 3,総額（税抜）-->
     <?php $total = $applePrice + $orengePrice; ?>
-    <p><?php echo ( "総額(税抜): " . $total . "円"); ?></p>
+    <p>総額(税抜): <?php echo ("$total"); ?>円</p>
 
     <!-- 4,総額（税込）-->
     <?php 
         $totalTax = $total * TAX;
         $total2 = $total + $totalTax;
     ?>
-    <p><?php echo ( "総額(税込): " . $total2 . "円"); ?></p>
+    <p>総額(税込): <?php echo ("$total2"); ?>円</p>
 
     <!-- 5,フルーツ一個あたりの金額（税抜）小数点以下は四捨五入-->
     <?php $fruits = round($total / 27); ?>
-    <p><?php echo ( "フルーツ一個あたりの金額(税抜): " . $fruits . "円"); ?></p>
+    <p>フルーツ一個あたりの金額(税抜): <?php echo ("$fruits"); ?>円</p>
 
 <body>
 </body>
