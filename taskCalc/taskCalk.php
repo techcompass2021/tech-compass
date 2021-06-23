@@ -18,7 +18,7 @@
 
     <p>
         <?php 
-            $number = round(5 / (6 * 6), 1) * 100;
+            $number = round(5 / (6 * 6) * 100, 1);
             echo( $number . "%" );
         ?>
     </p>
