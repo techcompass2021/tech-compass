@@ -16,10 +16,12 @@
 
     <p><?php echo(floor(22 / 3)); ?></p>
 
-    <p><?php 
-        $number = round(5 / (6 * 6), 1) * 100;
-        echo( $number . "%" );
-    ?></p>
+    <p>
+        <?php 
+            $number = round(5 / (6 * 6), 1) * 100;
+            echo( $number . "%" );
+        ?>
+    </p>
 
 </body>
 <body>
