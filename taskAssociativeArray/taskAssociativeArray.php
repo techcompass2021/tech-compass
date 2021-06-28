@@ -51,7 +51,7 @@
 
     <!-- 課題1-4 -->
     <?php 
-        $sumC = array_sum($testScoreArray['B']);
+        $sumC = array_sum($testScoreArray['C']);
         $averageC = round($sumC / count($testScoreArray['C']));
     ?>
     <p>4: <?php echo($averageC); ?>点</p>
