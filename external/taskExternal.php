@@ -64,7 +64,7 @@ $subjectTitle = [ //各科目名
     <?php 
         $differenceScore = differenceScore($averageScore, $Ascore);
                 
-            foreach ($differenceScore as $key =>  $value) {
+            foreach ($differenceScore as $key => $value) {
 
                 if ($averageScore[$key] < $Ascore[$key]){
                     echo ($subjectTitle[$key] . "は、平均点より" . $differenceScore[$key] . "点高いです。<br>");
