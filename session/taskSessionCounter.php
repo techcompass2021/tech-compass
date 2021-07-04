@@ -8,10 +8,17 @@
  */
 function display(string $string)
 {
-    echo ('<p>' . $string . '</p>');
+    echo ('<p>' . $_SESSION['count'] . $string . '</p>');
 }
 
-// ここに回答を追記する
+session_start();
+if ($_GET['clear'] == 1) {
+    $_SESSION['count'] = 1;
+} elseif (isset($_SESSION['count'])) {
+    $_SESSION['count']++;
+} else {
+    $_SESSION['count'] = 1;
+}
 
 ?>
 <!DOCTYPE html>
