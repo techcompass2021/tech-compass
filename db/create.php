@@ -8,8 +8,10 @@
         <title>テーブル作成（CREATE）</title>
     </head>
     <body>
-
+        <h1>課題1</h1>
         <p><?php echo ('CREATE TABLE country (id int AUTO_INCREMENT PRIMARY KEY NOT null, name varchar(20) NOT null, area varchar(10), lang varchar(10) DEFAULT "英語", number int NOT null DEFAULT 0);'); ?></p>
+        
+        <h1>課題2</h1>
         <p><?php echo ('CREATE TABLE heritage (id int PRIMARY KEY AUTO_INCREMENT NOT null, name varchar(20) NOT null, country_id int NOT null, type varchar(2) NOT null);'); ?></p>
         
     </body>
