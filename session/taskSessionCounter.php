@@ -12,13 +12,17 @@ function display(string $string)
 }
 
 session_start();
-if ($_GET['clear'] == 1) {
-    $_SESSION['count'] = 1;
-} elseif (isset($_SESSION['count'])) {
-    $_SESSION['count']++;
+
+if (isset($_GET['clear'])) {
+    if ($_GET['clear'] == 1){
+        $_SESSION['count'] = 1;
+    } elseif ($_GET['clear'] == 0) {
+        $_SESSION['count']++;
+    }
 } else {
     $_SESSION['count'] = 1;
 }
+
 
 ?>
 <!DOCTYPE html>

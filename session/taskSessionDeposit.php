@@ -2,15 +2,17 @@
 $sum = 0;
 
 session_start();
-if ($_POST['clear']) {
+if (isset($_POST['clear'])) {
     unset($_SESSION['sum']);
     $sum = 0;
-} elseif ($_POST['money'] != '') {
-    $_SESSION['sum'] += $_POST['money'];
-    $sum = $_SESSION['sum'];
-} else {
-    $sum = 0;
-}
+} elseif (isset($_POST['money'])) {
+    if ($_POST['money'] != '') {
+        $_SESSION['sum'] += $_POST['money'];
+        $sum = $_SESSION['sum'];
+    } else {
+        $sum = 0;
+    }
+} 
 ?>
 
 <!doctype html>
