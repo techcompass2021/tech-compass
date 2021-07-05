@@ -2,17 +2,16 @@
 $sum = 0;
 
 session_start();
-if (isset($_POST['clear'])) {
-    unset($_SESSION['sum']);
-    $sum = 0;
-} elseif (isset($_POST['money'])) {
+if (isset($_POST['save'])) {
     if ($_POST['money'] != '') {
-        $_SESSION['sum'] += $_POST['money'];
-        $sum = $_SESSION['sum'];
+        $_SESSION['total'] += $_POST['money'];
+        $sum = $_SESSION['total'];
     } else {
-        $sum = 0;
+        $sum = $_SESSION['total'];
     }
-} 
+} elseif (isset($_POST['clear'])) {
+    $_SESSION['total'] = $sum;
+}
 ?>
 
 <!doctype html>

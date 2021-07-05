@@ -22,6 +22,7 @@ if (isset($_GET['clear'])) {
     $_SESSION['count'] = 1;
 }
 
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
