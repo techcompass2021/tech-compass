@@ -12,7 +12,6 @@ function display(string $string)
 }
 
 session_start();
-
 if (isset($_GET['clear'])) {
     if ($_GET['clear'] == 1){
         $_SESSION['count'] = 1;
