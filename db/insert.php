@@ -18,7 +18,7 @@
 
         <h1>課題2</h1>
         <p><?php echo (
-            "INSERT INTO heritage VALUES (1, '自由の女神', 3, '文化');<br>
+            "INSERT INTO heritage VALUES (1, '自由の女神像', 3, '文化');<br>
             INSERT INTO heritage VALUES (2, '小笠原諸島', 1, '自然');<br>
             INSERT INTO heritage VALUES (3, '姫路城', 1, '文化');<br>
             INSERT INTO heritage VALUES (4, 'ロンドン塔', 5, '文化');<br>
