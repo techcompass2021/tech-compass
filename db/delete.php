@@ -9,9 +9,9 @@
     <body>
 
         <p><?php echo ("
-            start transaction; 
-            DELETE FROM heritage WHERE id in (2, 3);
-            select * from heritage;
+            start transaction; <br>
+            DELETE FROM heritage WHERE id in (2, 3); <br>
+            select * from heritage; <br>
             commit;
             "); ?></p>
         
