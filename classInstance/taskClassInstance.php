@@ -5,15 +5,10 @@ require('Hero.php');
 
 //インスタンス生成
 $hero1 = new Hero('ようこ', '女', '勇者', 24, 6, 13, 8);
-$hero1->getStatus();
-
 $hero2 = new Hero('りな', '女', '魔法使い', 16, 11, 5, 4);
-$hero2->getStatus();
-
 $hero3 = new Hero('たかし', '男', '僧侶', 18, 8, 9, 6);
-$hero3->getStatus();
 
-//インスタンスを配列$heroArrayにまとめる
+//getStatusメソッドを実施、配列$heroArrayにまとめる
 $heroArray = [
     $hero1->getStatus(),
     $hero2->getStatus(),
