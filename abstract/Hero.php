@@ -25,5 +25,4 @@ abstract class Hero {
     abstract public function attack();
     
 } 
-
 ?>

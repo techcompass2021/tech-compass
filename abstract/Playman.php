@@ -1,5 +1,6 @@
 <?php 
 class Playman extends Hero {
+    
     public function attack() : string {
         $randomNumber = mt_rand(1, 100);
         $chance = 70;
@@ -12,4 +13,5 @@ class Playman extends Hero {
         }
         return $attack;
     }
+
 }
