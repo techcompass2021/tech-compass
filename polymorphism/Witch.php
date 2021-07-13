@@ -4,4 +4,5 @@ class Witch extends Hero {
         return "魔法で攻撃しました！";
     }
 }
+
 ?>

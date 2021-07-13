@@ -28,6 +28,6 @@ class Party {
                 echo  "<p>" . $key . "のターンです。</p>";
                 echo  "<p>" . $value->attack() . "</p>";
         }
-        
     }
+
 }

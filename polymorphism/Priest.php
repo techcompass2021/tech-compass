@@ -4,4 +4,5 @@ class Priest extends Hero {
         return "魔法で見方を回復しました！";
     }
 }
+
 ?>

@@ -12,4 +12,5 @@ class Playman extends Hero {
         }
         return $attack;
     }
+
 }

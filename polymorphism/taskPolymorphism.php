@@ -36,6 +36,5 @@ $playman = new Playman('みつや', '男', '遊び人', 16, 7, 7, 7);
 
     <?php $party->allHeroAttack(); ?>
 
-
 </body>
 </html>

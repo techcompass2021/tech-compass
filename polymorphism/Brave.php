@@ -4,4 +4,5 @@ class Brave extends Hero {
         return "剣で攻撃しました！";
     }
 }
+
 ?>
