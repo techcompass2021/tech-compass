@@ -6,5 +6,6 @@ interface EnemyInterface {
 
     public function getEncountMessage();
 }
+?>
 
 
